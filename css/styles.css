@@ -18,7 +18,10 @@
   --icon-color: #afb1b8;
   --hover-bacground-color: #2196f3;
   --hover-icon-color: #ffffff;
-  --
+  --contacts-icon-color: #757575;
+  --hover-contacts-icon-color: #2196f3;
+  --footer-icon-color: #ffffff;
+  --footer-title-color: #ffffff;
 }
 
 p,
@@ -148,15 +151,6 @@ body {
   height: 100%;
 }
 
-.mail {
-  width: 16px;
-  height: 12px;
-}
-
-.tel {
-  width: 10px;
-  height: 16px;
-}
 .contacts-link {
   display: flex;
   width: 100%;
@@ -171,17 +165,17 @@ body {
 
 .contacts-icon {
   margin-right: 10px;
-  fill: var()
+  fill: var(--contacts-icon-color);
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
-  color: var(--button-bacground-color);
+  color: var(--hover-contacts-icon-color);
 }
 
 .contacts-link:hover .contacts-icon,
 .contacts-link:focus .contacts-icon {
-  color: var(--button-bacground-color);
+  fill: var(--hover-contacts-icon-color);
 }
 
 /* Hero */
@@ -435,8 +429,6 @@ body {
 }
 
 .social-networks-icon {
-  width: 100%;
-  height: 100%;
   fill: var(--icon-color);
 }
 
@@ -546,6 +538,9 @@ body {
 /* Footer */
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
   background: var(--accent-bacground-color);
   background: var(--accent-bacground-color);
   padding-top: 60px;
@@ -590,4 +585,59 @@ body {
 .contacts-footer .link:hover,
 .contacts-footer .link:focus {
   color: var(--button-bacground-color);
+}
+
+/* Footer social networks*/
+
+.footer-social-networks {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--footer-title-color);
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--footer-icon-color);
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--hover-bacground-color);
+}
+
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
+  fill: var(--hover-icon-color);
 }
