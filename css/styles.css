@@ -550,9 +550,13 @@ body {
   align-items: baseline;
 }
 
+.footer-address-naw {
+  width: calc((100% - 30px) / 3);
+}
+
 .footer-logo {
   display: block;
-  width: 270px;
+  /* width: 270px; */
   margin-bottom: 20px;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -564,7 +568,7 @@ body {
 
 .address {
   display: block;
-  width: 270px;
+  /* width: 270px; */
   margin-bottom: 10px;
   font-family: inherit;
   font-style: normal;
