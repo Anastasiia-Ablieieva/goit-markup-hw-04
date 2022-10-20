@@ -538,17 +538,20 @@ body {
 /* Footer */
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  gap: 70px;
-  background: var(--accent-bacground-color);
   background: var(--accent-bacground-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+.address-social {
+  display: flex;
+  gap: 30px;
+  align-items: baseline;
+}
+
 .footer-logo {
   display: block;
+  width: 270px;
   margin-bottom: 20px;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -560,6 +563,7 @@ body {
 
 .address {
   display: block;
+  width: 270px;
   margin-bottom: 10px;
   font-family: inherit;
   font-style: normal;
@@ -573,7 +577,7 @@ body {
   margin-bottom: 9px;
 }
 
-.contacts-footer .link {
+.footer-contacts .link {
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -582,8 +586,8 @@ body {
   color: var(--primary-text-color);
 }
 
-.contacts-footer .link:hover,
-.contacts-footer .link:focus {
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
   color: var(--button-bacground-color);
 }
 
